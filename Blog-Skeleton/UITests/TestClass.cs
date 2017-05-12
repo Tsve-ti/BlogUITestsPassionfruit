@@ -64,9 +64,10 @@ namespace UITests
             //WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
 
             var loginPage = new LogInPage(this.driver);
-            var logIn = AccessExcelData.GetTestData("ValidLogin");
+            LogIn user = new LogIn("abc@abc.com","abc");
+            //var logIn = AccessExcelData.GetTestData("ValidLogin");
             loginPage.NavigatetoBlogLogIn();
-            loginPage.FillLogInForm(logIn);
+            loginPage.FillLogInFormHardCode(user);
             loginPage.AssertValidLogIn1(("Hello"));
             loginPage.AssertValidLogIn2("Log off");
         }
