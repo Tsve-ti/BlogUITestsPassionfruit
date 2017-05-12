@@ -14,7 +14,7 @@ namespace UITests
             public static readonly string RootUrl = @"http://localhost:60634/Article/List";
             static BrowserHost()
             {
-            Instance.Run("Blog", 60634);
+            Instance.Run("Blog", 60639);
             }
         }
     }
